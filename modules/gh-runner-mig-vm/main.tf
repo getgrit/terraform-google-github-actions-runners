@@ -148,6 +148,10 @@ module "mig_template" {
   tags = [
     "gh-runner-vm"
   ]
+  access_config = [{
+    nat_ip = null
+    network_tier = "PREMIUM"
+  }]
 }
 /*****************************************
   Runner MIG
