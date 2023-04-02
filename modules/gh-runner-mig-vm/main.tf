@@ -136,6 +136,7 @@ module "mig_template" {
   disk_type            = "pd-ssd"
   auto_delete          = true
   name_prefix          = "gh-runner"
+  preemptible          = true
   source_image_family  = var.source_image_family
   source_image_project = var.source_image_project
   startup_script       = local.startup_script
